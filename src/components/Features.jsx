@@ -39,7 +39,7 @@ const Features = () => {
   }, []);
 
   return (
-    <section className='w-full common-padding bg-zinc relative overflow-x-hidden'>
+    <section className='w-full common-padding bg-zinc relative overflow-x-hidden overflow-y-auto'>
       <div className='screen-max-width'>
         <div className='mb-12 w-full'>
           <h1 id='features_title' className='section-heading'>
