@@ -62,7 +62,7 @@ const Model = () => {
         </h1>
 
         <div className='flex flex-col items-center mt-5'>
-          <div className='w-full h-[75vh] md:h-[90vh] overflow-x-hidden relative overflow-y-auto'>
+          <div className='w-full h-[75dvh] md:h-[90dvh] overflow-x-hidden relative overflow-y-auto'>
             <ModelView
               index={1}
               groupRef={small}
@@ -91,7 +91,7 @@ const Model = () => {
                 bottom: 0,
                 left: 0,
                 right: 0,
-                overflow: "hidden",
+                // overflow: "hidden",
               }}
               eventSource={document.getElementById("root")}
             >
