@@ -46,9 +46,9 @@ const Hero = () => {
         </p>
 
         <div className='md:w-10/12 w-9/12'>
-          {/* <video className='' autoPlay muted playsInline={true} key={videoSrc}>
+          <video className='' autoPlay muted playsInline={true} key={videoSrc}>
             <source src={videoSrc} type='video/mp4' />
-          </video> */}
+          </video>
         </div>
       </div>
 
