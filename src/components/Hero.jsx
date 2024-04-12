@@ -34,7 +34,7 @@ const Hero = () => {
     gsap.to("#cta", {
       y: -50,
       opacity: 1,
-      delay: 2,
+      delay: 4,
     });
   }, []);
 
