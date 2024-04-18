@@ -30,11 +30,17 @@ const Features = () => {
       { scrub: 5.5 }
     );
 
-    animateWithGsap(".g_text", {
-      y: 0,
+    gsap.to(".g_text", {
+      scrollTrigger: {
+        trigger: ".g_text",
+        toggleActions: "restart none none none",
+        start: "top 85%",
+        // scrub: 0,
+      },
       opacity: 1,
-      ease: "power2.inOut",
+      y: 0,
       duration: 1,
+      ease: "power2.inOut",
     });
   }, []);
 

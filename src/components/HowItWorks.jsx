@@ -19,7 +19,13 @@ const HowItWorks = () => {
       ease: "power2.inOut",
     });
 
-    animateWithGsap(".g_fadeIn", {
+    gsap.to("#g-fadeIn", {
+      scrollTrigger: {
+        trigger: "#g-fadeIn",
+        toggleActions: "restart none none none",
+        start: "top 85%",
+        // scrub: 0,
+      },
       opacity: 1,
       y: 0,
       duration: 1,
@@ -74,7 +80,7 @@ const HowItWorks = () => {
 
         <div className='hiw-text-container'>
           <div className='flex flex-1 justify-center flex-col'>
-            <p className='hiw-text g_fadeIn'>
+            <p id='g-fadeIn' className='hiw-text opacity-0 translate-y-[100px]'>
               A17 Pro is an entirely new class of iPhone chip that delivers our{" "}
               <span className='text-white'>
                 best graphic performance by far
@@ -82,7 +88,10 @@ const HowItWorks = () => {
               .
             </p>
 
-            <p className='hiw-text g_fadeIn'>
+            <p
+              id='g-fadeIn'
+              className='hiw-text  opacity-0 translate-y-[100px] '
+            >
               Mobile{" "}
               <span className='text-white'>
                 games will look and feel so immersive
@@ -91,7 +100,10 @@ const HowItWorks = () => {
             </p>
           </div>
 
-          <div className='flex-1 flex justify-center flex-col g_fadeIn'>
+          <div
+            id='g-fadeIn'
+            className='flex-1 flex justify-center flex-col opacity-0 translate-y-20'
+          >
             <p className='hiw-text'>New</p>
             <p className='hiw-bigtext'>Pro-class GPU</p>
             <p className='hiw-text'>with 6 cores</p>
